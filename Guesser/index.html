@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Guesser</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="title">Guess the country</div>
+			<button id="chooseMode">Global ⬇</button>
+		</div>
+		<div id="languageFormular">
+			<div id="languageTitle">Choose Language</div>
+			<div id="languages">
+				<button id="english" onclick="chooseLanguage(0)" class="languageButton">
+					<div id="englishText" class="languageText">English</div>
+					<img id="englishImage" src="https://flagcdn.com/h20/gb.jpg" class="languageImage"/>
+				</button>
+				<button id="german" onclick="chooseLanguage(1)" class="languageButton">
+					<div id="germanText" class="languageText">German</div>
+					<img id="germanImage" src="https://flagcdn.com/h20/de.jpg" class="languageImage"/>
+				</button>
+				<button id="spanish" onclick="chooseLanguage(2)" class="languageButton">
+					<div id="spanishText" class="languageText">Spanish</div>
+					<img id="spanishImage" src="https://flagcdn.com/h20/es.jpg" class="languageImage"/>
+				</button>
+			</div>
+		</div>
+		<div id="formular">
+			<div id="top">
+				<img id="flag" src="">
+				<div id="subtitle">Country of this flag:</div>
+			</div> 
+			<div id="bottom">
+				<div id="inputAndCheck">
+					<input id="input"/>
+					<button id="check" onclick="checkInput()">➥</button>
+				</div>
+				<div id="letters">
+		
+				</div>
+				<div id="correct" class="result">CORRECT</div>
+				<div id="wrong" class="result">WRONG</div>
+				<div id="close" class="result">CLOSE</div>
+				<button id="skip" onclick="nextFlag()">SKIP</div>
+				<button id="answerButton" onclick="showAnswer()">?</button>
+				<div id="answer">South Africa</div>
+			</div>
+		</div>
+		<button id="changeLanguageButton" onclick="changeLanguageDuring()">Change Language ➧</button>
+    <script src="Scripts/data.js"></script>
+    <script src="Scripts/script.js"></script>
+	</body>
+</html>
